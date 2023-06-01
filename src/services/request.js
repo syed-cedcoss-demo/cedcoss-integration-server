@@ -7,3 +7,7 @@ export const reActive = async () => {
     console.log('error', error);
   }
 };
+
+export const bigcommerceInstance = axios.create({
+  baseURL: 'https://api.bigcommerce.com/stores/'
+});

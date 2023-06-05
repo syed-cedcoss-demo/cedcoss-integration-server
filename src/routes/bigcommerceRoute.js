@@ -18,5 +18,7 @@ router.post('/create-webhook', auth, createWebhook);
 router.get('/get-webhook', auth, getWebhook);
 router.get('/order-created', auth, orderCreated);
 router.post('/order-created', auth, orderCreated);
+router.get('/payment-status', orderCreated);
+router.post('/payment-status', orderCreated);
 
 export default router;

@@ -1,0 +1,894 @@
+2023-06-02T11:41:17.758Z - error ==> jwt expired, description==>TokenExpiredError: jwt expired
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+
+2023-06-02T11:41:42.040Z - error ==> Cannot read properties of undefined (reading 'connected_platform'), description==>TypeError: Cannot read properties of undefined (reading 'connected_platform')
+    at createWebhook (file:///home/cedcoss/syed/node/bigcommerce-server/src/controllers/bigcommerceController.js:108:28)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:11:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+2023-06-02T11:47:19.655Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-02T12:01:00.454Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-02T12:01:51.822Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-02T12:04:11.451Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-02T12:04:46.462Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-02T12:35:34.940Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:35:35.374Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:35:37.698Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:36:35.589Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:36:36.016Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:36:37.982Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:36:53.229Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:36:53.248Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:36:53.783Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:36:57.502Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:36:57.766Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:36:57.776Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:37:26.739Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:37:53.801Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:37:53.807Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:37:54.333Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:37:58.059Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:37:58.317Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:37:58.346Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:38:27.259Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:39:16.161Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:39:16.609Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:39:18.560Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:40:34.388Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:40:34.394Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:40:34.899Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:40:38.331Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:40:38.595Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:40:38.890Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:41:07.786Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:44:16.708Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:44:17.165Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:44:19.114Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:45:35.062Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:45:35.082Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:45:35.459Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:45:38.634Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:45:39.154Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:45:39.450Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:46:08.475Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:54:17.306Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:54:17.719Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:54:19.656Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:55:35.635Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:55:35.648Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:55:36.016Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:55:38.921Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:55:39.709Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:55:40.005Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T12:56:09.028Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:09:17.979Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:09:18.273Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:09:20.210Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:10:36.236Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:10:36.272Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:10:36.588Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:10:39.504Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:10:40.269Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:10:40.554Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:11:09.588Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:39:18.606Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:39:18.837Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:39:20.758Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:40:36.783Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:40:36.817Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:40:37.122Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:40:39.785Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:40:40.546Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:40:40.843Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-02T13:41:10.129Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/syed/node/bigcommerce-server/src/services/jwt.js:10:20)
+    at auth (file:///home/cedcoss/syed/node/bigcommerce-server/src/middleware/tokenVerification.js:7:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+

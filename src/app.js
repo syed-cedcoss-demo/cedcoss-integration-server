@@ -32,6 +32,7 @@ const setupApp = (app) => {
   app.use('/images', express.static(basePath + '/public/images'));
   app.use('/upload', express.static(basePath + '/public/uploads'));
   app.use('/logs', express.static(basePath + '/public/logs'));
+  app.use('/file', express.static(basePath + '/public/templates'));
 
   // APP ROUTES
   app.get('/', (req, res) => res.status(200).send('<h2>Server is running...</h2>'));

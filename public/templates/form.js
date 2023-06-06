@@ -7,9 +7,6 @@ export const bigcommerceConnectForm = (token) => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BigCommerce Auth Form</title>    
-    <meta http-equiv="content-security-policy"
-      script-src 'self' sha256-llcVRMdHvkNYwW2gD8kALVWzxiIN51bYoWAy/5ICnso=
-    />
    <link rel="icon"
         href="https://dev.apps.cedcommerce.com/marketplace-integration/static/modules/etsy/assets/images/favicon.ico">
     <meta name="theme-color" content="#000000" />
@@ -87,6 +84,7 @@ export const bigcommerceConnectForm = (token) => {
     </style>
   </head>
   <body>
+   <script src="http://localhost:3002/file/script.js"></script>
     <div id="feedback-form">
       <h3 class="header">BigCommerce Connection</h3>
       <div id="container">
@@ -97,95 +95,9 @@ export const bigcommerceConnectForm = (token) => {
         <button class="button" onclick="handleSubmit()" id="button">Connect Shop</button>
       </div>
       <div id="toast"/>
+      <input type="hidden" value="${token}" id="token"/>
     </div>
-    <script type="text/javascript">
-      //EVENT LISTENER REGISTER FOR EACH INPUT FIELDS
-      const inputs = document.querySelectorAll("input");
-      inputs.forEach((el) => {
-        document.addEventListener("change", handleInput);
-      });
-      //PAYLOAD
-      let payload = {
-        platform:"bigcommerce",
-        storeHash: "",
-        accessToken: "",
-        clientId: "",
-        clientSecret: "",
-      };
-      //TOAST CREATOR
-      function showToast(message) {
-        const toast = document.getElementById("toast");
-        toast.innerText = message;
-        toast.style.display = "block";
-        setTimeout(() => {
-          toast.style.display = "none";
-        }, 3000);
-      }
-
-      //GET DATA FROM INPUT FIELDS
-      function handleInput(e) {
-        switch (e.target.name) {
-          case "storeHash":
-            toggleClass(e);
-            payload = { ...payload, storeHash: e.target.value };
-            break;
-          case "accessToken":
-            toggleClass(e);
-            payload = { ...payload, accessToken: e.target.value };
-            break;
-          case "clientId":
-            toggleClass(e);
-            payload = { ...payload, clientId: e.target.value };
-            break;
-          case "clientSecret":
-            toggleClass(e);
-            payload = { ...payload, clientSecret: e.target.value };
-            break;
-        }
-      }
-
-      //TOGGLE CLASS ON ERROR
-      function toggleClass(e) {
-        e.target.value.length < 10
-          ? e.target.classList.add("error")
-          : e.target.classList.remove("error");
-      }
-
-      //HANDLE SUBMIT      
-      async function handleSubmit() { 
-       const btn=document.getElementById("button");
-       const  isValid = Object.values(payload).every((el) => el.length > 0);
-        if (!isValid) return showToast("Please fill all the required fields");     
-        if(payload?.storeHash?.length != 10) return showToast("Please enter valid store hash");
-        const options = {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            authorization: "Bearer"+" "+"${token}"
-          },
-          body: JSON.stringify(payload),
-        };
-        try {       
-          btn.disabled=true;
-          btn.innerText="Connecting..."   
-          const res = await fetch("connect-platform", options);
-          const data = await res.json();
-          btn.disabled=false;
-          btn.innerText="Connect Shop"
-          if(data?.success){
-            showToast("Connected successfully");
-            window.location.href = "${process.env.APP_URL}/?token=${token}";
-          }else{
-            showToast(data?.msg);
-            btn.disabled=false;
-            btn.innerText="Connect Shop"
-          }
-        }
-         catch (error) {
-          console.log('error', error)
-        }
-      }
-    </script>
+   
   </body>
 </html>
 

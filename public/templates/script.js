@@ -1,3 +1,5 @@
+// ********************* START SCRIPT FOR BIG-COMMERCE AUTH FORM *********************
+
 // EVENT LISTENER REGISTER FOR EACH INPUT FIELDS
 const inputs = document.querySelectorAll('input');
 inputs.forEach((el) => {
@@ -91,3 +93,5 @@ const handleSubmit = async () => {
     console.log('error', error);
   }
 };
+
+// ********************* END SCRIPT FOR BIG-COMMERCE AUTH FORM *********************

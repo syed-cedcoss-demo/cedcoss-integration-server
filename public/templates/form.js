@@ -84,7 +84,7 @@ export const bigcommerceConnectForm = (token) => {
     </style>
   </head>
   <body>
-   <script src="http://localhost:3002/file/script.js"></script>
+   <script src="${process.env.SERVER_URL}/file/script.js"></script>
     <div id="feedback-form">
       <h3 class="header">BigCommerce Connection</h3>
       <div id="container">

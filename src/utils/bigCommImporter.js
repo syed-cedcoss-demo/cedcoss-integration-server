@@ -25,9 +25,9 @@ export const productImporter = async (user) => {
       format.push({
         user_id: user?.id,
         sku: product?.sku,
-        item_id: product?.id,
-        item_name: product?.name,
-        item: product
+        source_product_id: product?.id,
+        product_name: product?.name,
+        product
       });
     });
     await productModel.create(format);

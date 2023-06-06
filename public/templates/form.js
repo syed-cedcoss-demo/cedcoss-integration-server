@@ -6,7 +6,13 @@ export const bigcommerceConnectForm = (token) => {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>BigCommerce Connect Form</title>
+    <title>BigCommerce Auth Form</title>    
+    <meta http-equiv="content-security-policy"
+      script-src 'self' sha256-llcVRMdHvkNYwW2gD8kALVWzxiIN51bYoWAy/5ICnso=
+    />
+   <link rel="icon"
+        href="https://dev.apps.cedcommerce.com/marketplace-integration/static/modules/etsy/assets/images/favicon.ico">
+    <meta name="theme-color" content="#000000" />
     <style>
       #feedback-form {
         max-width: 410px;

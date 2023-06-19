@@ -213,3 +213,59 @@
     at endReadableNT (node:internal/streams/readable:1359:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 
+2023-06-19T13:31:02.442Z - error ==> Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle, description==>TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:271:14)
+    at ServerResponse.send (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:162:21)
+    at createWebhook (file:///home/cedcoss/Syed/node/bigcommerce-server/src/controllers/bigcommerceController.js:143:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+2023-06-19T13:32:11.726Z - error ==> Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle, description==>TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:271:14)
+    at ServerResponse.send (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:162:21)
+    at createWebhook (file:///home/cedcoss/Syed/node/bigcommerce-server/src/controllers/bigcommerceController.js:143:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+2023-06-19T13:33:10.499Z - error ==> Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle, description==>TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:271:14)
+    at ServerResponse.send (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:162:21)
+    at createWebhook (file:///home/cedcoss/Syed/node/bigcommerce-server/src/controllers/bigcommerceController.js:143:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+2023-06-19T13:36:53.524Z - error ==> Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle, description==>TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:271:14)
+    at ServerResponse.send (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/response.js:162:21)
+    at createWebhook (file:///home/cedcoss/Syed/node/bigcommerce-server/src/controllers/bigcommerceController.js:143:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+

@@ -125,28 +125,33 @@ export const createWebhook = async (req, res) => {
         data: {}
       });
     }
-    console.log('bigcom', bigcom?.store_hash, bigcom?.access_token);
-    const token = await signForeverJWT({ id: req?.userId });
 
-    const response = await bigComPostCall({
-      url: `${bigcom?.store_hash}/v3/hooks`,
-      body: {
-        scope: 'store/order/*',
+    const token = await signForeverJWT({ id: req?.userId });
+    const { data } = await bigComPostCall({
+      url: `stores/${bigcom?.store_hash}/v3/hooks`,
+      body: JSON.stringify({
+        scope: 'store/order/updated',
         destination:
           'https://b8f4-103-97-184-122.ngrok-free.app/bigcommerce/watch-order-status',
         is_active: true,
         events_history_enabled: true,
-        headers: { Authorization: 'Bearer ' + token }
-      },
-      token: bigcom?.access_token
+        headers: { Authorization: `Bearer  ${token}` }
+      }),
+      access_token: bigcom?.access_token
     });
-
-    console.log('data', response);
-    return res.status(200).send({
-      success: true,
-      msg: 'webhook created successfully',
-      data: response
-    });
+    if (!data) {
+      return res.status(404).send({
+        success: true,
+        msg: 'something went wrong',
+        data: {}
+      });
+    } else {
+      return res.status(200).send({
+        success: true,
+        msg: 'webhook created successfully',
+        data
+      });
+    }
   } catch (error) {
     appError(res, error);
   }
@@ -195,6 +200,7 @@ export const orderStatus = async (req, res) => {
     appError(res, error);
   }
 };
+
 export const productStatus = async (req, res) => {
   try {
     console.log('req.body', req.body);

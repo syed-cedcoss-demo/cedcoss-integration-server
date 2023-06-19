@@ -26,19 +26,18 @@ export const bigComGetCall = async (payload) => {
 };
 export const bigComPostCall = async (payload) => {
   try {
-    const url = `https://api.bigcommerce.com/${payload?.url}`;
     const option = {
       method: 'POST',
-      body: payload?.body,
+      url: `https://api.bigcommerce.com/${payload?.url}`,
+      data: payload?.body,
       headers: {
         'Content-Type': 'application/json',
         'X-Auth-Token': payload?.access_token
       }
     };
-    const response = await axios.post(url, option);
-    return response;
+    return await axios(option);
   } catch (error) {
-    console.log('error', error);
+    console.log('error', error?.message);
     return error;
   }
 };

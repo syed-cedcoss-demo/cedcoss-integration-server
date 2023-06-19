@@ -1,6 +1,6 @@
 import currentProcessModel from '../models/currentProcess.js';
 import productModel from '../models/prductModel.js';
-import { bigcommerceInstance } from '../services/request.js';
+import { bigComGetCall } from '../services/request.js';
 
 export const productImporter = async (user) => {
   let page = 1;
@@ -11,15 +11,10 @@ export const productImporter = async (user) => {
     platform: 'bigcommerce'
   });
   const ps = setInterval(async () => {
-    const url = `{store_hash}/v3/catalog/products?page=${page}&limit=5`;
-    const { data } = await bigcommerceInstance.get(
-      url?.replace('{store_hash}', user?.store_hash),
-      {
-        headers: {
-          'X-Auth-Token': user?.access_token
-        }
-      }
-    );
+    const { data } = await bigComGetCall({
+      token: user?.access_token,
+      url: `${user?.store_hash}/v3/catalog/products?page=${page}&limit=5`
+    });
     const format = [];
     data?.data?.forEach(async (product) => {
       format.push({

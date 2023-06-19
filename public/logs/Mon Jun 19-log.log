@@ -1,0 +1,215 @@
+2023-06-19T07:35:49.692Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/Syed/node/bigcommerce-server/src/services/jwt.js:12:20)
+    at auth (file:///home/cedcoss/Syed/node/bigcommerce-server/src/middleware/tokenVerification.js:8:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-19T10:31:47.286Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/Syed/node/bigcommerce-server/src/services/jwt.js:12:20)
+    at auth (file:///home/cedcoss/Syed/node/bigcommerce-server/src/middleware/authorization.js:8:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-19T10:45:41.982Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/Syed/node/bigcommerce-server/src/services/jwt.js:12:20)
+    at auth (file:///home/cedcoss/Syed/node/bigcommerce-server/src/middleware/authorization.js:8:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-19T10:46:13.071Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T10:46:56.903Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T10:49:30.618Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T10:50:26.144Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T10:52:17.635Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T10:55:18.488Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T10:59:25.848Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:15:08.810Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:16:23.900Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:16:49.749Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:19:12.146Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:20:50.021Z - error ==> jwt must be provided, description==>JsonWebTokenError: jwt must be provided
+    at module.exports [as verify] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/jsonwebtoken/verify.js:60:17)
+    at verifyJWT (file:///home/cedcoss/Syed/node/bigcommerce-server/src/services/jwt.js:12:20)
+    at auth (file:///home/cedcoss/Syed/node/bigcommerce-server/src/middleware/authorization.js:8:27)
+    at Layer.handle [as handle_request] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/express/lib/router/index.js:280:10)
+
+2023-06-19T11:21:27.256Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:22:52.707Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:31:12.755Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:32:43.110Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:39:11.688Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:39:52.494Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:43:20.749Z - error ==> invalid expiresIn option for string payload, description==>Error: invalid expiresIn option for string payload
+    at module.exports [as sign] (/home/cedcoss/Syed/node/bigcommerce-server/node_modules/jsonwebtoken/sign.js:152:22)
+    at signJWT (file:///home/cedcoss/Syed/node/bigcommerce-server/src/services/jwt.js:5:20)
+    at createWebhook (file:///home/cedcoss/Syed/node/bigcommerce-server/src/controllers/bigcommerceController.js:129:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+2023-06-19T11:51:10.101Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T11:58:25.929Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T12:03:04.280Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T12:03:59.216Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T12:05:55.993Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+2023-06-19T12:06:06.946Z - error ==> Request failed with status code 401, description==>AxiosError: Request failed with status code 401
+    at settle (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///home/cedcoss/Syed/node/bigcommerce-server/node_modules/axios/lib/adapters/http.js:570:11)
+    at Unzip.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+

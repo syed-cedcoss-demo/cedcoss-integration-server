@@ -1,5 +1,6 @@
 import { verifyJWT } from '../services/jwt.js';
 import appError from '../validations/appError.js';
+
 export const auth = async (req, res, next) => {
   try {
     const { authorization } = req.headers;
@@ -10,7 +11,7 @@ export const auth = async (req, res, next) => {
       req.token = token;
       next();
     } else {
-      appError(res, { message: 'token verification failed' });
+      res.status(402).send({ success: false, msg: 'token verification error' });
     }
   } catch (error) {
     appError(res, error);

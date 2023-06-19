@@ -1,7 +1,8 @@
 import { bigcommerceConnectForm } from '../../public/templates/form.js';
 import currentProcessModel from '../models/currentProcess.js';
 import userModel from '../models/userModel.js';
-import { bigcommerceInstance } from '../services/request.js';
+import { signForeverJWT } from '../services/jwt.js';
+import { bigComGetCall, bigComPostCall } from '../services/request.js';
 import { productImporter } from '../utils/bigCommImporter.js';
 import appError from '../validations/appError.js';
 
@@ -11,7 +12,7 @@ export const connectForm = async (req, res) => {
     res.send(
       bigcommerceConnectForm(
         req?.token ??
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Nzg0YTJlMGM2MDM5ZTRlMjdiM2QwNiIsImlhdCI6MTY4NTYwNDkzMywiZXhwIjoxNjg1NjkxMzMzfQ.MKyn-BtdthkTjrCTtIUZt5FQxuDRbQKRQlnr6PXbd9o'
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Nzg0YTJlMGM2MDM5ZTRlMjdiM2QwNiIsImlhdCI6MTY4NzE3MDI5MCwiZXhwIjoxNjg3MjU2NjkwfQ.yzjd6_zEgD4d9Lp8uTUkXCGyUdTLLwV1X1-yIvF8D_0'
       )
     );
   } catch (error) {
@@ -38,10 +39,21 @@ export const connectPlatform = async (req, res) => {
     if (user[0].connected_platform.some((el) => el?.platform === payload?.platform)) {
       return res.status(409).send({
         success: false,
-        msg: 'Already connected',
+        msg: 'Your BigCommerce store already connected',
         data: {}
       });
     }
+    const platform = await userModel.find({
+      connected_platform: { $elemMatch: { store_hash: { $eq: payload?.store_hash } } }
+    });
+    if (platform?.length > 0) {
+      return res.status(409).send({
+        success: false,
+        msg: 'You can not connect same account with multiple user',
+        data: {}
+      });
+    }
+
     await userModel.updateOne({ _id: req.userId }, { $push: { connected_platform: payload } });
     return res.status(200).send({
       success: true,
@@ -106,23 +118,29 @@ export const createWebhook = async (req, res) => {
       });
     }
     const bigcom = user[0]?.connected_platform?.find((el) => el.platform === 'bigcommerce');
-    if (!bigcom) {
+    if (!bigcom?.access_token) {
       return res.status(401).send({
         success: false,
         msg: 'bigcommerce not connected',
         data: {}
       });
     }
-    const response = await bigcommerceInstance.post(`${bigcom?.store_hash}/v3/hooks`, {
-      headers: { 'Content-Type': 'application/json', 'X-Auth-Token': bigcom?.access_token },
+    console.log('bigcom', bigcom?.store_hash, bigcom?.access_token);
+    const token = await signForeverJWT({ id: req?.userId });
+
+    const response = await bigComPostCall({
+      url: `${bigcom?.store_hash}/v3/hooks`,
       body: {
         scope: 'store/order/*',
-        destination: 'https://c59d-103-97-184-122.ngrok-free.app/bigcommerce/create-webhook',
+        destination:
+          'https://b8f4-103-97-184-122.ngrok-free.app/bigcommerce/watch-order-status',
         is_active: true,
         events_history_enabled: true,
-        headers: { custom: 'ced-demo-header' }
-      }
+        headers: { Authorization: 'Bearer ' + token }
+      },
+      token: bigcom?.access_token
     });
+
     console.log('data', response);
     return res.status(200).send({
       success: true,
@@ -154,17 +172,9 @@ export const getWebhook = async (req, res) => {
         data: {}
       });
     }
-    const { data } = await bigcommerceInstance.get(`${bigcom?.store_hash}/v3/hooks`, {
-      headers: { 'Content-Type': 'application/json', 'X-Auth-Token': bigcom?.access_token },
-      body: {
-        scope: 'store/order/*',
-        destination: 'https://c59d-103-97-184-122.ngrok-free.app/bigcommerce/create-webhook',
-        is_active: true,
-        events_history_enabled: true,
-        headers: { custom: 'ced-demo-header' }
-      }
+    const { data } = await bigComGetCall({
+      url: `${bigcom?.store_hash}/v3/hooks`
     });
-    console.log('data', data);
     return res.status(200).send({
       success: true,
       msg: 'webhook successfully fetched',
@@ -175,8 +185,17 @@ export const getWebhook = async (req, res) => {
   }
 };
 
-// GET WEBHOOK
-export const orderCreated = async (req, res) => {
+// WEBHOOK WATCHER
+export const orderStatus = async (req, res) => {
+  try {
+    console.log('req.body', req.body);
+    console.log('req.query', req.query);
+    console.log('req.param', req.param);
+  } catch (error) {
+    appError(res, error);
+  }
+};
+export const productStatus = async (req, res) => {
   try {
     console.log('req.body', req.body);
     console.log('req.query', req.query);

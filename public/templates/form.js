@@ -82,7 +82,18 @@ export const bigcommerceConnectForm = (token) => {
     
   </head>
   <body>
-  <script type="text/javascript" nonce="rAnd0m">
+   <div id="feedback-form">
+      <h3 class="header">BigCommerce Connection</h3>
+      <div id="container">
+        <input type="text" name="storeHash" placeholder="Enter store hash" />
+        <input type="text" name="accessToken" placeholder="Enter access token" />
+        <input type="text" name="clientId" placeholder="Enter client id" />
+        <input type="text" name="clientSecret" placeholder="Enter client secret" />
+        <button class="button" onclick="handleSubmit()" id="button">Connect Shop</button>
+      </div>
+      <div id="toast"/>
+    </div>    
+  <script>
       //EVENT LISTENER REGISTER FOR EACH INPUT FIELDS
       const inputs = document.querySelectorAll("input");
       inputs.forEach((el) => {
@@ -169,18 +180,7 @@ export const bigcommerceConnectForm = (token) => {
           console.log('error', error)
         }
       }
-    </script>
-    <div id="feedback-form">
-      <h3 class="header">BigCommerce Connection</h3>
-      <div id="container">
-        <input type="text" name="storeHash" placeholder="Enter store hash" />
-        <input type="text" name="accessToken" placeholder="Enter access token" />
-        <input type="text" name="clientId" placeholder="Enter client id" />
-        <input type="text" name="clientSecret" placeholder="Enter client secret" />
-        <button class="button" onclick="handleSubmit()" id="button">Connect Shop</button>
-      </div>
-      <div id="toast"/>
-    </div>    
+    </script>   
   </body>
 </html>
 

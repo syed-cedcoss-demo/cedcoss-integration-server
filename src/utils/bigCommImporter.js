@@ -11,12 +11,13 @@ export const productImporter = async (user) => {
     platform: 'bigcommerce'
   });
   const ps = setInterval(async () => {
-    const { data } = await bigComGetCall({
-      token: user?.access_token,
-      url: `${user?.store_hash}/v3/catalog/products?page=${page}&limit=5`
+    const res = await bigComGetCall({
+      access_token: user?.access_token,
+      url: `stores/${user?.store_hash}/v3/catalog/products?page=${page}&limit=5`
     });
+    console.log('res', res?.data);
     const format = [];
-    data?.data?.forEach(async (product) => {
+    res?.data?.data?.forEach(async (product) => {
       format.push({
         user_id: user?.id,
         sku: product?.sku,
@@ -26,10 +27,10 @@ export const productImporter = async (user) => {
       });
     });
     await productModel.create(format);
-    console.log('data?.meta?.pagination?.total_pages', data?.meta?.pagination?.total_pages);
-    console.log('page', page);
+    console.log('total_pages', res?.data?.meta?.pagination?.total_pages);
+    console.log('current_page', page);
     page++;
-    if (data?.meta?.pagination?.total_pages < page) {
+    if (res?.data?.meta?.pagination?.total_pages < page) {
       clearInterval(ps);
       await currentProcessModel.deleteOne({ user_id: user?.id });
     }

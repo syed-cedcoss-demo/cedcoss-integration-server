@@ -10,17 +10,17 @@ export const reActive = async () => {
 
 export const bigComGetCall = async (payload) => {
   try {
-    const url = `https://api.bigcommerce.com/${payload?.url}`;
     const option = {
       method: 'GET',
+      url: `https://api.bigcommerce.com/${payload?.url}`,
       headers: {
         'Content-Type': 'application/json',
         'X-Auth-Token': payload?.access_token
       }
     };
-    const response = await axios.post(url, option);
-    return response;
+    return await axios(option);
   } catch (error) {
+    console.log('ERRR', error?.message);
     return error;
   }
 };

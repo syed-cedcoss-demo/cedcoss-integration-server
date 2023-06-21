@@ -98,7 +98,7 @@ export const productImport = async (req, res) => {
     productImporter({ ...bigcom, id: user[0]._id });
     return res.status(200).send({
       success: true,
-      msg: 'bigcommerce product import successfully started',
+      msg: 'bigcommerce product import successfully started.',
       data: {}
     });
   } catch (error) {
@@ -131,8 +131,7 @@ export const createWebhook = async (req, res) => {
       url: `stores/${bigcom?.store_hash}/v3/hooks`,
       body: JSON.stringify({
         scope: 'store/order/updated',
-        destination:
-          'https://b8f4-103-97-184-122.ngrok-free.app/bigcommerce/watch-order-status',
+        destination: 'https://3b32-103-97-184-122.ngrok-free.app/watch-order-status',
         is_active: true,
         events_history_enabled: true,
         headers: { Authorization: `Bearer  ${token}` }

@@ -125,7 +125,6 @@ export const createWebhook = async (req, res) => {
         data: {}
       });
     }
-
     const token = await signForeverJWT({ id: req?.userId });
     const { data } = await bigComPostCall({
       url: `stores/${bigcom?.store_hash}/v3/hooks`,

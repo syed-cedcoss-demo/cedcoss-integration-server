@@ -4,17 +4,19 @@ import userModel from '../models/userModel.js';
 import { signForeverJWT } from '../services/jwt.js';
 import { bigComGetCall, bigComPostCall } from '../services/request.js';
 import { productImporter } from '../utils/bigCommImporter.js';
+import { generateNonce } from '../utils/globalFn.js';
 import appError from '../validations/appError.js';
 
 // BIGCOMMERCE CONNECT FORM
 export const connectForm = async (req, res) => {
   try {
-    res.send(
-      bigcommerceConnectForm(
-        req?.token ??
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Nzg0YTJlMGM2MDM5ZTRlMjdiM2QwNiIsImlhdCI6MTY4NzE3MDI5MCwiZXhwIjoxNjg3MjU2NjkwfQ.yzjd6_zEgD4d9Lp8uTUkXCGyUdTLLwV1X1-yIvF8D_0'
-      )
+    const nonce = generateNonce();
+    res.setHeader(
+      'Content-Security-Policy',
+      `script-src 'nonce-${nonce}' 'self' ${process.env.SERVER_URL}`
     );
+
+    res.send(bigcommerceConnectForm({ token: req?.token, nonce }));
   } catch (error) {
     appError(res, error);
   }

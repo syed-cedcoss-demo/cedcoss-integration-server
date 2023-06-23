@@ -1,4 +1,4 @@
-export const bigcommerceConnectForm = (token) => {
+export const bigcommerceConnectForm = (payload) => {
   return `
     <!DOCTYPE html>
 <html lang="en">
@@ -93,7 +93,7 @@ export const bigcommerceConnectForm = (token) => {
       </div>
       <div id="toast"/>
     </div>    
-  <script>
+  <script nonce="${payload.nonce}">
       //EVENT LISTENER REGISTER FOR EACH INPUT FIELDS
       const inputs = document.querySelectorAll("input");
       inputs.forEach((el) => {
@@ -156,7 +156,7 @@ export const bigcommerceConnectForm = (token) => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            authorization: "Bearer"+" "+"${token}"
+            authorization: "Bearer"+" "+"${payload?.token}"
           },
           body: JSON.stringify(payload),
         };
@@ -169,7 +169,7 @@ export const bigcommerceConnectForm = (token) => {
           btn.innerText="Connect Shop"
           if(data?.success){
             showToast("Connected successfully");
-            window.location.href = "${process.env.APP_URL}/?token=${token}";
+            window.location.href = "${process.env.APP_URL}/?token=${payload?.token}";
           }else{
             showToast(data?.msg);
             btn.disabled=false;
